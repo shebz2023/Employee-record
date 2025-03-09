@@ -1,7 +1,10 @@
 export default function LoginPage() {
   return (
-    <div>
-      <h1>Login Page</h1>
-    </div>
+    <>
+      <div className="w-screen h-screen flex">
+        <div className="w-1/2"></div>
+        <div className="w-1/2"></div>
+      </div>{" "}
+    </>
   );
 }
