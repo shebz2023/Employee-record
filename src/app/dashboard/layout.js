@@ -14,7 +14,7 @@ export default function DashboardLayout({ children }) {
       </nav>
       <div className="h-full flex">
         <SideBar />
-        <div className="bg-black w-full h-full">{children}</div>
+        <div className="w-full h-full">{children}</div>
       </div>
     </div>
   );
