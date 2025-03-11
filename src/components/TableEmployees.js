@@ -13,7 +13,19 @@ const dataSource = [
     age: 42,
     address: "10 Downing Street",
   },
-];
+  {
+    key: "3",
+    name: "palmer",
+    age: 42,
+    address: "10 Downing Street",
+  },
+  {
+    key: "4",
+    name: "peter",
+    age: 42,
+    address: "10 Downing Street",
+  },
+]
 
 const columns = [
   {

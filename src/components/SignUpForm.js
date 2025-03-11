@@ -1,6 +1,10 @@
 "use client";
 import { Input } from "antd";
+import { useRouter } from "next/navigation";
+
 export default function SingUpForm() {
+  const router = useRouter();
+  console.log(router, "the router is ================<");
   return (
     <div className="h-2/3 flex flex-col gap-5 px-[18%] mt-14">
       <div className="flex gap-3">
@@ -18,7 +22,10 @@ export default function SingUpForm() {
       <label className="text-neutral-600 text-sm">Password</label>
       <Input placeholder="*********************" />
       <div className="flex justify-end">
-        <button className="bg-green-500 py-2 px-7 text-white cursor-pointer hover:bg-green-600 duration-300">
+        <button
+          className="bg-green-500 py-2 px-7 text-white cursor-pointer hover:bg-green-600 duration-300"
+          onClick={() => router.push("/dashboard")}
+        >
           Continue
         </button>
       </div>
